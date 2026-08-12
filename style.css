@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #f3f6fb;
+    color: #151515;
+}
+
+
+/* Main container */
+
+.container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 28px 20px 60px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 10px;
+    color: #8a8a8a;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.search-box {
+    width: 148px;
+    height: 27px;
+    padding: 0 11px;
+
+    border: 1px solid #d5d9df;
+    border-radius: 4px;
+
+    background: white;
+
+    font-size: 9px;
+    color: #555;
+
+    outline: none;
+}
+
+.search-box::placeholder {
+    color: #929292;
+}
+
+.search-box:focus {
+    border-color: #8b45e9;
+}
+
+
+.explore-btn {
+    height: 27px;
+    padding: 0 13px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #8743e8;
+    color: white;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.explore-btn:hover {
+    background: #7130cf;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.mentor-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 17px 16px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.mentor-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 8px;
+
+    padding: 10px;
+
+    min-width: 0;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mentor-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.image-container {
+    width: 100%;
+    height: 181px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* New Mentor */
+
+.new-badge {
+    position: absolute;
+
+    bottom: 11px;
+    left: 9px;
+
+    padding: 4px 7px;
+
+    background: #32c47b;
+
+    color: white;
+
+    border-radius: 4px;
+
+    font-size: 7px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   MENTOR INFORMATION
+========================= */
+
+.mentor-info {
+    padding-top: 9px;
+}
+
+.mentor-info h2 {
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 4px;
+}
+
+.verified {
+    color: #28ad70;
+
+    font-size: 9px;
+
+    margin-left: 2px;
+}
+
+.job {
+    font-size: 9px;
+
+    color: #5d5d5d;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    white-space: nowrap;
+
+    font-size: 7px;
+
+    color: #858585;
+}
+
+.rating {
+    color: #e9a400;
+
+    margin-left: auto;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.bottom {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-top: 16px;
+
+    gap: 5px;
+}
+
+
+/* Price */
+
+.price {
+    display: flex;
+
+    align-items: baseline;
+
+    flex-wrap: wrap;
+
+    column-gap: 2px;
+
+    line-height: 1.2;
+}
+
+.price span {
+    width: 100%;
+
+    font-size: 8px;
+
+    color: #777;
+
+    margin-bottom: 2px;
+}
+
+.price strong {
+    font-size: 11px;
+
+    font-weight: 500;
+}
+
+.price small {
+    font-size: 7px;
+
+    color: #777;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.book-btn,
+.trial-btn {
+    height: 28px;
+
+    padding: 0 10px;
+
+    border-radius: 5px;
+
+    background: white;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+.book-btn {
+    border: 1px solid #aeb3bb;
+
+    color: #555;
+}
+
+.book-btn:hover {
+    background: #f5f5f5;
+}
+
+.trial-btn {
+    border: 1px solid #9b63dc;
+
+    color: #7d39d6;
+}
+
+.trial-btn:hover {
+    background: #f6f0ff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .mentor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-container {
+        height: 230px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .hero h1 {
+        font-size: 21px;
+    }
+
+    .top-bar {
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 150px;
+    }
+
+    .mentor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        height: 300px;
+    }
+
+    .bottom {
+        margin-top: 20px;
+    }
+}
